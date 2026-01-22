@@ -1,0 +1,21 @@
+package com.pfa.livraison.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class ClientRegisterRequest {
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String phone;
+    private String password;
+    private LocalDate dateOfBirth;
+}

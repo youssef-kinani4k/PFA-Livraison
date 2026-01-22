@@ -1,0 +1,145 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh;
+  font-size: 14px;
+  padding-bottom: 40px;
+}
+
+#container h1 {
+  border-bottom: 1px solid var(--primary-color);
+  width: 320px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: x-large;
+}
+
+#signin {
+  width: 90vw;
+  margin: 10px;
+  padding: 5px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#signin div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+#signin div input {
+  width: 70vw;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  margin: 5px;
+}
+
+#submit {
+  width: 70vw;
+  border-radius: 5px;
+  font-size: 17px;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+  padding: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
+
+.messagEror {
+  margin: 10px;
+  font-size: 16px;
+  color: rgb(240, 102, 102);
+  font-weight: bolder;
+  font-style: italic;
+  align-self: flex-start;
+}
+
+#signin div input:focus {
+  outline: none;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+#container #signin div button {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  border: 0;
+  background-color: #ffffff;
+}
+
+h5 a,
+label a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+#passLabel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img {
+  width: 150px;
+}
+
+#container h3 {
+  margin-top: 15px;
+}
+
+@media (min-width: 576px) {
+  #signin {
+    width: 60vw;
+  }
+  #signin div input {
+    width: 60vw;
+  }
+  #signin #submit {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 768px) {
+  #signin {
+    width: 50vw;
+  }
+  #signin div input {
+    width: 50vw;
+  }
+  #signin #submit {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #signin {
+    width: 30vw;
+  }
+  #signin div input {
+    width: 30vw;
+  }
+  #signin #submit {
+    width: 30vw;
+  }
+  #container {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  color: var(--secondary-color);
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #0099a9;
+  --secondary-color: #00254e;
+}
+
+.primary-bg {
+  background-color: var(--primary-color);
+}
+.secondary-bg {
+  background-color: var(--secondary-color);
+}
+.primary-color {
+  color: var(--primary-color);
+}
+.secondary-color {
+  color: var(--secondary-color);
+}

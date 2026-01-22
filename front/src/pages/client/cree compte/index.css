@@ -1,0 +1,172 @@
+#createCompteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background: linear-gradient(
+    165deg,
+    var(--secondary-color),
+    #3a86ff,
+    var(--primary-color)
+  );
+}
+
+#createCompteContainer div:first-child {
+  display: flex;
+  height: 33vh;
+  padding-top: 5vh;
+  padding-bottom: 30vh;
+  padding-right: 9vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#createCompteContainer div h3,
+#createCompteContainer div h2 {
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+#createCompteContainer div h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+#createCompteContainer div ul li {
+  color: white;
+  list-style: none;
+}
+
+#createCompteContainer div h3 a {
+  border-bottom: 1px solid white;
+  padding-bottom: 3px;
+  color: white;
+  text-decoration: none;
+}
+
+#signIn-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding: 15px;
+  padding-bottom: 30px;
+  background-color: white;
+}
+
+#signIn-form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#signIn-form h3 {
+  display: none;
+  background-color: var(--secondary-color);
+}
+
+#signIn-form img {
+  width: 150px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: -7vh;
+}
+
+#signIn-form div #showpass {
+  position: absolute;
+  right: 16px;
+  font-size: 15px;
+  top: 30%;
+  border: 0;
+}
+#signIn-form #submit {
+  width: 80vw;
+}
+
+#createCompteContainer #signIn-form input {
+  width: 80vw;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  margin: 10px;
+}
+#createCompteContainer #signIn-form input:focus {
+  outline: none;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+@media (min-width: 576px) {
+  #signIn-form {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 768px) {
+  #createCompteContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("../../../assets/signin.png");
+    object-fit: contain;
+    background-size: 90vh;
+  }
+  #signIn-form {
+    width: 70vw;
+    height: 100%;
+    padding: 20px;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+  }
+  #createCompteContainer #signIn-form input {
+    width: 50vw;
+  }
+  #signIn-form #submit {
+    width: 50vw;
+  }
+  #createCompteContainer div:first-child {
+    justify-content: center;
+    width: 100%;
+    background: radial-gradient(ellipse at top, #0a2463 0%, #000814 70%);
+    font-size: 25px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    align-items: flex-start;
+    justify-self: flex-end;
+    align-self: flex-start;
+  }
+  #createCompteContainer div:first-child h3:first-child {
+    display: none;
+  }
+  #createCompteContainer #signIn-form h3 {
+    display: block;
+    background-color: inherit;
+    color: var(--secondary-color);
+    margin: auto;
+  }
+  #createCompteContainer #signIn-form h3 a {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+  }
+  #signIn-form img {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  #signIn-form {
+    width: 60vw;
+  }
+  #createCompteContainer #signIn-form input {
+    width: 40vw;
+  }
+  #signIn-form #submit {
+    width: 40vw;
+  }
+  #createCompteContainer {
+    background-size: 120vh;
+  }
+}
+
+@media (min-width: 1200px) {
+}

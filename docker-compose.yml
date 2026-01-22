@@ -1,0 +1,28 @@
+version: '3'
+services:
+  backend:
+    build: ./livraison
+    container_name: livraison-backend
+    ports:
+      - "8081:8081"
+    environment:
+      - DB_URL=jdbc:mysql://host.docker.internal:3306/livraison
+      - SERVER_PORT=8081
+    networks:
+      - app-network
+
+  frontend:
+    build: ./frontend
+    container_name: livraison-frontend
+    ports:
+      - "3000:80"
+    environment:
+      - REACT_APP_API_URL=http://backend:8081
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
