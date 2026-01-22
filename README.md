@@ -101,7 +101,7 @@ Une fois lancé :
 * Frontend : [http://localhost:5173](http://localhost:5173)
 * Backend : [http://localhost:8080](http://localhost:8080)
 * MySQL : localhost:3306
-* MongoDB : localhost:27017
+* MongoDB : link cluster
 
 ---
 
